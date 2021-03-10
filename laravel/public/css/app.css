@@ -27,6 +27,7 @@ header .option {
 }
 
 header ul li {
+  text-transform: capitalize;
   list-style: none;
   margin: 20px 15px;
   color: #0d244b;
