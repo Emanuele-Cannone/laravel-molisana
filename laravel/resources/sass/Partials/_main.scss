@@ -1,3 +1,29 @@
-.box {
-    @include flex-center;
+main{
+    .linea-prodotti {
+        margin-top: 30px;
+        @include flex-center;
+        flex-wrap: wrap;
+        .box {
+            display: flex;
+            flex-basis: calc(100% / 3);
+            position: relative;
+            .description{
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $text-bordeaux;
+            }
+            &:hover .description{
+                display: block;
+            }
+            &:hover img{
+                opacity: 0.8;
+            }
+            img{
+                max-width: 100%;
+            }
+        }
+    }
 }
