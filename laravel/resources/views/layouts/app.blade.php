@@ -8,7 +8,7 @@
 </head>
 <body>
     @include('Partials.header')
-    ciao
+    @yield('content')
     @include('Partials.footer')
     
 </body>
