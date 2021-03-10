@@ -2,9 +2,15 @@
     display: flex;
 }
 
-.flex-center{
+@mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+@mixin flex-c-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

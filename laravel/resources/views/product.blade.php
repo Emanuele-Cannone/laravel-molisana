@@ -2,10 +2,13 @@
 
 @section('content')
     
-
-  @foreach ($formati as $item)
-      @dd($item)
-  @endforeach
+    <div class="box">
+        @foreach ($formati as $item)
+              <div class="box">
+                  <img src="{{ $item['src'] }}" alt="">
+              </div>
+        @endforeach
+    </div>
         
     
 @endsection

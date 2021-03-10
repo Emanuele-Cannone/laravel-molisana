@@ -141,7 +141,7 @@ Route::get('/prodotti', function () {
             ]
          ];
          $data = ['formati' => $pasta];
-    return view('product');
+    return view('product', $data);
 })->name('prodotti');
 
 Route::get('/novita', function () {
