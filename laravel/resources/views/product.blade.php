@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'prodotti')
+
 @section('content')
     
     <div class="linea-prodotti">

@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+@section('title', 'novità')
+
 @section('content')
-    <p>io sono news</p>
+
+    <div class="evidenza">
+        <img src="{{ asset('img/fondo-pag-speciali.jpg') }}" alt="">
+    </div>
+    
 @endsection

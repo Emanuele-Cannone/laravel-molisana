@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
+
+
 @section('content')
-    <p>io sono home</p>
+    
+    <div class="evidenza">
+        <img src="{{ asset('img/molisana-home.jpg') }}" alt="">
+    </div>
 
 @endsection

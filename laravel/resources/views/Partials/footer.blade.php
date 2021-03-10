@@ -1,1 +1,3 @@
-<h3>questo è il footer</h3>
+<footer>
+    <img src="{{ asset('img/footer-montagne-bottom.jpg') }}" alt="">
+</footer>

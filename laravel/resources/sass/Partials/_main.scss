@@ -26,4 +26,12 @@ main{
             }
         }
     }
+    .evidenza{
+
+        @include flex-center;
+        img{
+            height: 300px;
+        }
+
+    } 
 }

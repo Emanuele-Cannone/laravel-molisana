@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fefefe;
+}
+
 .contenitore {
   max-width: 1200px;
   margin: auto;
@@ -70,5 +74,19 @@ main .linea-prodotti .box:hover img {
 
 main .linea-prodotti .box img {
   max-width: 100%;
+}
+
+main .evidenza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .evidenza img {
+  height: 300px;
+}
+
+footer {
+  margin-top: 40px;
 }
 
