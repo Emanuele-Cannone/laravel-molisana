@@ -1,4 +1,4 @@
-<h3>questo è l'header</h3>
+<img src="{{ asset('img/logo.png') }}" alt="logo">
 
 <ul>
     <li><a href="{{ route('home') }}">home</a></li>

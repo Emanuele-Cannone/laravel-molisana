@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <p>io sono product</p>
+    
+
+  @foreach ($formati as $item)
+      @dd($item)
+  @endforeach
+        
+    
 @endsection
