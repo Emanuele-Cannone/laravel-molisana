@@ -42,6 +42,10 @@ header ul li:hover {
   background-color: aqua;
 }
 
+main h2 {
+  text-align: center;
+}
+
 main .linea-prodotti {
   margin-top: 30px;
   display: flex;
@@ -51,7 +55,6 @@ main .linea-prodotti {
 }
 
 main .linea-prodotti .box {
-  display: flex;
   flex-basis: calc(100% / 3);
   position: relative;
 }

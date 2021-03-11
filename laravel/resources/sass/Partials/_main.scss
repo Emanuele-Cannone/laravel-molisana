@@ -1,10 +1,12 @@
 main{
+    h2{
+        text-align: center;
+    }
     .linea-prodotti {
         margin-top: 30px;
         @include flex-center;
         flex-wrap: wrap;
         .box {
-            display: flex;
             flex-basis: calc(100% / 3);
             position: relative;
             .description{
