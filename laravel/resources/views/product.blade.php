@@ -4,11 +4,20 @@
 
 @section('content')
     <div class="linea-prodotti">
+
         @foreach ($formati as $index => $item)
-              <div class="box">
-                  <img src="{{ $item['src'] }}" alt="">
-                  <a href="{{ route('specifica-prodotto', ['id' => $index]) }}" class="description">{{ $item['titolo'] }} - {{ $item['tipo'] }}</a>
-              </div>
+
+            <h2>{{ $index }}</h2>
+
+            @foreach ($item as $key => $tipologie)
+
+            <div class="box">
+                <img src="{{ $tipologie['src'] }}" alt="">
+                <a href="{{ route('specifica-prodotto', ['id' => $key]) }}" class="description">{{ $tipologie['titolo'] }} - {{ $tipologie['tipo'] }}</a>
+            </div>
+
+            @endforeach
+
         @endforeach
     </div>
         

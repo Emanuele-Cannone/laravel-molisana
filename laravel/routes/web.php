@@ -20,6 +20,28 @@ Route::get('/', function () {
 Route::get('/prodotti', function () {
     $pasta = config('ciao');
     $data = ['formati' => config('ciao')];
+
+    $pastaLunga = array_filter($pasta, function($k) {
+    return $k['tipo'] == 'lunga';
+    });
+
+    $pastaCorta = array_filter($pasta, function($k) {
+    return $k['tipo'] == 'corta';
+    });
+
+    $pastaCortissima = array_filter($pasta, function($k) {
+    return $k['tipo'] == 'cortissima';
+    });
+
+    $data = [
+        'formati' => [
+            'lunga' => $pastaLunga,
+            'corta' => $pastaCorta,
+            'cortissima' => $pastaCortissima
+        ]
+    ];
+
+
     return view('product', $data);
 })->name('prodotti');
 
