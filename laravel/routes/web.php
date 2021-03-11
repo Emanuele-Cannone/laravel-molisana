@@ -147,3 +147,7 @@ Route::get('/prodotti', function () {
 Route::get('/novita', function () {
     return view('news');
 })->name('novita');
+
+Route::get('/specifica-prodotto', function () {
+    return view('specific-product');
+})->name('specifica-prodotto');

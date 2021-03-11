@@ -89,5 +89,10 @@ main .evidenza img {
 
 footer {
   margin-top: 40px;
+  height: 100px;
+}
+
+footer img {
+  width: 100%;
 }
 
