@@ -8,7 +8,7 @@
         @foreach ($formati as $item)
               <div class="box">
                   <img src="{{ $item['src'] }}" alt="">
-                  <p class="description">{{ $item['titolo'] }} - {{ $item['tipo'] }}</p>
+                  <a href="#" class="description">{{ $item['titolo'] }} - {{ $item['tipo'] }}</a>
               </div>
         @endforeach
     </div>
