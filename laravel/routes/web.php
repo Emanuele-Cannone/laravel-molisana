@@ -21,18 +21,25 @@ Route::get('/prodotti', function () {
     $pasta = config('ciao');
     $data = ['formati' => config('ciao')];
 
-    $pastaLunga = array_filter($pasta, function($k) {
-    return $k['tipo'] == 'lunga';
-    });
+    // $pastaLunga = array_filter($pasta, function($k) {
+    // return $k['tipo'] == 'lunga';
+    // });
 
-    $pastaCorta = array_filter($pasta, function($k) {
-    return $k['tipo'] == 'corta';
-    });
+    // $pastaCorta = array_filter($pasta, function($k) {
+    // return $k['tipo'] == 'corta';
+    // });
 
-    $pastaCortissima = array_filter($pasta, function($k) {
-    return $k['tipo'] == 'cortissima';
-    });
+    // $pastaCortissima = array_filter($pasta, function($k) {
+    // return $k['tipo'] == 'cortissima';
+    // });
 
+    
+    $collection = collect($pasta);
+    
+    $pastaLunga = $collection->where('tipo', 'lunga');
+    $pastaCorta = $collection->where('tipo', 'corta');
+    $pastaCortissima = $collection->where('tipo', 'cortissima');
+    
     $data = [
         'formati' => [
             'lunga' => $pastaLunga,
@@ -40,7 +47,6 @@ Route::get('/prodotti', function () {
             'cortissima' => $pastaCortissima
         ]
     ];
-
 
     return view('product', $data);
 })->name('prodotti');

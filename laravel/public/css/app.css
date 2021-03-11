@@ -42,6 +42,10 @@ header ul li:hover {
   background-color: aqua;
 }
 
+header p {
+  text-align: center;
+}
+
 main h2 {
   text-align: center;
 }

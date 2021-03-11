@@ -9,4 +9,7 @@
             <li><a href="{{ route('novita') }}">novità</a></li>
         </ul>
     </nav>
+    <p>
+        stai visualizzando: {{ Request::route()->getName() }}
+    </p>
 </header>

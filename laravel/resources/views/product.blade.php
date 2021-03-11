@@ -3,14 +3,14 @@
 @section('title', 'prodotti')
 
 @section('content')
-
+    
     @foreach ($formati as $index => $item)
 
         <h2>{{ $index }}</h2>
  
-    <div class="linea-prodotti">
+        <div class="linea-prodotti">
 
-        @foreach ($item as $key => $tipologie)
+            @foreach ($item as $key => $tipologie)
 
             <div class="box">
                 <img src="{{ $tipologie['src'] }}" alt="">
@@ -20,7 +20,7 @@
             @endforeach
 
         </div>
-        @endforeach
+    @endforeach
         
     
 @endsection

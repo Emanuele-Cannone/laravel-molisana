@@ -11,6 +11,7 @@
 <body>
     {{-- questo è l'header --}}
     @include('Partials.header')
+    
 
     {{-- questo è il main che ogni volta è compilato con una root diversa --}}
     <main class="contenitore">
