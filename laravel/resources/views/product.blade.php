@@ -5,10 +5,10 @@
 @section('content')
     
     <div class="linea-prodotti">
-        @foreach ($formati as $item)
+        @foreach ($formati as $index => $item)
               <div class="box">
                   <img src="{{ $item['src'] }}" alt="">
-                  <a href="{{ route('specifica-prodotto') }}" class="description">{{ $item['titolo'] }} - {{ $item['tipo'] }}</a>
+                  <a href="{{ route('specifica-prodotto', ['id' => $index]) }}" class="description">{{ $item['titolo'] }} - {{ $item['tipo'] }}</a>
               </div>
         @endforeach
     </div>

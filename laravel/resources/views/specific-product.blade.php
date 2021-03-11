@@ -2,6 +2,6 @@
 
 @section('content')
     
-    <h1>io sono la specifica prodotto</h1>
+    <h1>io sono la specifica prodotto di </h1>
 
 @endsection
