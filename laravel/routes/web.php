@@ -52,14 +52,22 @@ Route::get('/novita', function () {
 Route::get('/specifica-prodotto/{id}', function ($id) {
     $pasta = config('ciao');
 
-    $selezione = $pasta[$id];
+    if ($id < count($pasta) && $id >= 0 && is_numeric($id)) {
+        $selezione = $pasta[$id];
     
-    $data = [
-        'nomeAssociativo' => $selezione
-    ];
+        $data = [
+            'nomeAssociativo' => $selezione
+        ];
+    
+        
+        return view('specific-product', $data);
+        
+    } else {
+        
+        abort('404');
+    }
 
-
-    return view('specific-product', $data);
 })->name('specifica-prodotto');
+
     
 
