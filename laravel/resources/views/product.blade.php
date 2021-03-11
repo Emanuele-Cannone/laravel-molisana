@@ -3,7 +3,6 @@
 @section('title', 'prodotti')
 
 @section('content')
-    
     <div class="linea-prodotti">
         @foreach ($formati as $index => $item)
               <div class="box">

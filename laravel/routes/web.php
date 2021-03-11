@@ -18,6 +18,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/prodotti', function () {
+    $pasta = config('ciao');
     $data = ['formati' => config('ciao')];
     return view('product', $data);
 })->name('prodotti');
@@ -27,9 +28,16 @@ Route::get('/novita', function () {
 })->name('novita');
     
 Route::get('/specifica-prodotto/{id}', function ($id) {
-    echo $id;
-    $data = ['formati' => config('ciao')];
-    return view('specific-product');
+    $pasta = config('ciao');
+
+    $selezione = $pasta[$id];
+    
+    $data = [
+        'nomeAssociativo' => $selezione
+    ];
+
+
+    return view('specific-product', $data);
 })->name('specifica-prodotto');
     
 
