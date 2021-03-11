@@ -33,5 +33,12 @@ main{
             height: 300px;
         }
 
-    } 
+    }
+
+    .description-products{
+        @include flex-c-center;
+        img{
+            max-width: 100%;
+        }
+    }
 }

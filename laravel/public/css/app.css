@@ -87,6 +87,17 @@ main .evidenza img {
   height: 300px;
 }
 
+main .description-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .description-products img {
+  max-width: 100%;
+}
+
 footer {
   margin-top: 40px;
   height: 100px;
